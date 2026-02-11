@@ -7,9 +7,11 @@ const Footer = () => {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg gradient-teal">
-                <span className="text-sm font-bold text-primary-foreground font-display">T</span>
-              </div>
+              <img
+                src="/logo-header.png"
+                alt="TechZium HR Logo"
+                className="h-8 w-8 object-contain"
+              />
               <span className="text-lg font-bold font-display text-secondary-foreground">
                 Techzium <span className="text-primary">HR</span>
               </span>

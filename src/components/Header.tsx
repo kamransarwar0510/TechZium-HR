@@ -28,9 +28,11 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-xl">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg gradient-teal">
-            <span className="text-lg font-bold text-primary-foreground font-display">T</span>
-          </div>
+          <img
+            src="/logo-header.png"
+            alt="TechZium HR Logo"
+            className="h-10 w-10 object-contain"
+          />
           <span className="text-xl font-bold font-display text-foreground">
             Techzium <span className="text-primary">HR</span>
           </span>
@@ -42,11 +44,10 @@ const Header = () => {
             <Link
               key={link.href}
               to={link.href}
-              className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                isActive(link.href)
+              className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${isActive(link.href)
                   ? "text-primary bg-primary/10"
                   : "text-muted-foreground hover:text-foreground hover:bg-muted"
-              }`}
+                }`}
             >
               {link.name}
             </Link>
@@ -60,11 +61,10 @@ const Header = () => {
           >
             <Link
               to="/modules"
-              className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                location.pathname.startsWith("/modules")
+              className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-md transition-colors ${location.pathname.startsWith("/modules")
                   ? "text-primary bg-primary/10"
                   : "text-muted-foreground hover:text-foreground hover:bg-muted"
-              }`}
+                }`}
             >
               Modules <ChevronDown className="h-3 w-3" />
             </Link>
@@ -93,11 +93,10 @@ const Header = () => {
             <Link
               key={link.href}
               to={link.href}
-              className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                isActive(link.href)
+              className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${isActive(link.href)
                   ? "text-primary bg-primary/10"
                   : "text-muted-foreground hover:text-foreground hover:bg-muted"
-              }`}
+                }`}
             >
               {link.name}
             </Link>
@@ -127,11 +126,10 @@ const Header = () => {
                 <Link
                   key={link.href}
                   to={link.href}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                    isActive(link.href)
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive(link.href)
                       ? "text-primary bg-primary/10"
                       : "text-muted-foreground hover:text-foreground hover:bg-muted"
-                  }`}
+                    }`}
                 >
                   {link.name}
                 </Link>
