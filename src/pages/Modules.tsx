@@ -8,7 +8,7 @@ import { Users, Clock, DollarSign, BarChart3, Award, Shield, ArrowRight } from "
 
 const modules = [
   { icon: Users, title: "Employee Management", desc: "Centralized employee profiles, document management, organizational hierarchy, and self-service portals for your entire workforce.", href: "/modules/employee-management", color: "bg-blue-500/10 text-blue-600" },
-  { icon: Clock, title: "Attendance & Leave", desc: "Smart attendance tracking with geolocation, shift planning, leave balance management, and approval workflows.", href: "/modules/attendance-leave", color: "bg-emerald-500/10 text-emerald-600" },
+  { icon: Clock, title: "Attendance & Leave", desc: "Smart attendance tracking with geolocation, shift planning, leave balance management, and approval workflows.", href: "/modules/attendance-leave", color: "bg-amber-700/10 text-amber-700" },
   { icon: DollarSign, title: "Payroll & Finance", desc: "Automated salary processing, tax calculations, payslip generation, and compliance with local regulations.", href: "/modules/payroll", color: "bg-amber-500/10 text-amber-600" },
   { icon: BarChart3, title: "Performance Management", desc: "Goal setting, KPI tracking, 360° feedback, appraisal cycles, and continuous performance monitoring.", href: "/modules", color: "bg-purple-500/10 text-purple-600" },
   { icon: Award, title: "Recruitment", desc: "Job postings, applicant tracking, interview scheduling, offer management, and seamless onboarding.", href: "/modules", color: "bg-rose-500/10 text-rose-600" },

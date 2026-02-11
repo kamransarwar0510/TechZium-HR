@@ -15,7 +15,7 @@ const attendanceFeatures = [
 const leaveBalances = [
   { type: "Annual Leave", total: 20, used: 8, color: "bg-blue-500" },
   { type: "Sick Leave", total: 12, used: 3, color: "bg-amber-500" },
-  { type: "Personal Leave", total: 5, used: 2, color: "bg-emerald-500" },
+  { type: "Personal Leave", total: 5, used: 2, color: "bg-amber-700" },
   { type: "Work from Home", total: 24, used: 10, color: "bg-purple-500" },
 ];
 
@@ -28,7 +28,7 @@ const calendarWeeks = [
 ];
 
 const stats = [
-  { label: "Present Today", value: "142", icon: CheckCircle, color: "text-emerald-500" },
+  { label: "Present Today", value: "142", icon: CheckCircle, color: "text-amber-600" },
   { label: "On Leave", value: "12", icon: XCircle, color: "text-amber-500" },
   { label: "Absent", value: "3", icon: AlertCircle, color: "text-destructive" },
   { label: "Total Employees", value: "157", icon: Users, color: "text-primary" },
@@ -110,12 +110,11 @@ const AttendanceLeave = () => {
                   {week.map((status, di) => (
                     <div
                       key={di}
-                      className={`h-10 rounded-md flex items-center justify-center text-xs font-semibold ${
-                        status === "P" ? "bg-emerald-100 text-emerald-700" :
-                        status === "A" ? "bg-red-100 text-red-700" :
-                        status === "L" ? "bg-amber-100 text-amber-700" :
-                        "bg-muted text-muted-foreground"
-                      }`}
+                      className={`h-10 rounded-md flex items-center justify-center text-xs font-semibold ${status === "P" ? "bg-amber-100 text-amber-700" :
+                          status === "A" ? "bg-red-100 text-red-700" :
+                            status === "L" ? "bg-amber-100 text-amber-700" :
+                              "bg-muted text-muted-foreground"
+                        }`}
                     >
                       {status}
                     </div>
@@ -123,7 +122,7 @@ const AttendanceLeave = () => {
                 </div>
               ))}
               <div className="flex gap-4 mt-4 text-xs text-muted-foreground">
-                <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-emerald-100" /> Present</span>
+                <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-amber-100" /> Present</span>
                 <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-amber-100" /> Leave</span>
                 <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-red-100" /> Absent</span>
               </div>

@@ -82,10 +82,10 @@ const WhyTechzium = () => {
                 <div key={c.feature} className={`grid grid-cols-3 p-4 text-sm items-center ${i < comparison.length - 1 ? "border-b border-border/50" : ""}`}>
                   <span className="text-foreground font-medium">{c.feature}</span>
                   <span className="text-center">
-                    {c.techzium ? <Check className="h-5 w-5 text-emerald-500 mx-auto" /> : <X className="h-5 w-5 text-muted-foreground mx-auto" />}
+                    {c.techzium ? <Check className="h-5 w-5 text-amber-600 mx-auto" /> : <X className="h-5 w-5 text-muted-foreground mx-auto" />}
                   </span>
                   <span className="text-center">
-                    {c.traditional ? <Check className="h-5 w-5 text-emerald-500 mx-auto" /> : <X className="h-5 w-5 text-muted-foreground mx-auto" />}
+                    {c.traditional ? <Check className="h-5 w-5 text-amber-600 mx-auto" /> : <X className="h-5 w-5 text-muted-foreground mx-auto" />}
                   </span>
                 </div>
               ))}

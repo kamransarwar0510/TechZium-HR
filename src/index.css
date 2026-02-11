@@ -15,33 +15,31 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 40% 13%;
 
-    --primary: 199 89% 40%;
+    --primary: 28 45% 40%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 40% 13%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 25 30% 15%;
+    --secondary-foreground: 30 20% 90%;
 
-    --muted: 210 20% 95%;
-    --muted-foreground: 220 10% 46%;
+    --muted: 30 15% 85%;
+    --muted-foreground: 25 10% 40%;
 
-    --accent: 172 66% 50%;
-    --accent-foreground: 220 40% 13%;
+    --accent: 28 40% 50%;
+    --accent-foreground: 25 30% 10%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 10 60% 45%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 20% 90%;
-    --input: 214 20% 90%;
-    --ring: 199 89% 40%;
+    --border: 30 15% 85%;
+    --input: 30 15% 85%;
+    --ring: 28 45% 50%;
 
     --radius: 0.75rem;
 
-    --navy: 220 40% 13%;
-    --navy-light: 220 30% 20%;
-    --teal: 199 89% 40%;
-    --teal-light: 199 80% 55%;
-    --teal-glow: 172 66% 50%;
-    --slate-soft: 210 20% 95%;
+    --brown: 28 45% 40%;
+    --brown-light: 28 40% 55%;
+    --brown-glow: 30 50% 60%;
+    --cream-soft: 30 20% 95%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -63,24 +61,24 @@
     --popover: 220 35% 12%;
     --popover-foreground: 210 20% 95%;
 
-    --primary: 199 89% 48%;
+    --primary: 28 45% 48%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 20% 20%;
-    --secondary-foreground: 210 20% 95%;
+    --secondary: 25 30% 20%;
+    --secondary-foreground: 30 20% 95%;
 
-    --muted: 220 20% 18%;
-    --muted-foreground: 215 15% 60%;
+    --muted: 25 20% 18%;
+    --muted-foreground: 30 15% 60%;
 
-    --accent: 172 66% 45%;
+    --accent: 28 40% 45%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62% 30%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 10 62% 30%;
+    --destructive-foreground: 30 20% 98%;
 
-    --border: 220 20% 20%;
-    --input: 220 20% 20%;
-    --ring: 199 89% 48%;
+    --border: 25 20% 20%;
+    --input: 25 20% 20%;
+    --ring: 28 45% 48%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -103,22 +101,31 @@
     font-family: 'Inter', sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Space Grotesk', sans-serif;
   }
 }
 
 @layer utilities {
   .gradient-hero {
-    background: linear-gradient(135deg, hsl(220 40% 13%) 0%, hsl(220 30% 20%) 50%, hsl(199 89% 40% / 0.3) 100%);
+    background: linear-gradient(135deg, hsl(25 30% 13%) 0%, hsl(28 35% 20%) 50%, hsl(28 45% 40% / 0.3) 100%);
+  }
+
+  .gradient-brown {
+    background: linear-gradient(135deg, hsl(28 45% 40%) 0%, hsl(30 50% 55%) 100%);
   }
 
   .gradient-teal {
-    background: linear-gradient(135deg, hsl(199 89% 40%) 0%, hsl(172 66% 50%) 100%);
+    background: linear-gradient(135deg, hsl(28 45% 40%) 0%, hsl(30 50% 55%) 100%);
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, hsl(199 89% 40%) 0%, hsl(172 66% 50%) 100%);
+    background: linear-gradient(135deg, hsl(28 45% 40%) 0%, hsl(30 50% 55%) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
